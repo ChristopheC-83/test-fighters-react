@@ -1,0 +1,61 @@
+pourrait on modifier les characters de manière permanente ?
+
+
+Pour ceux de l'api ou en dur,non, on envoie une page refus
+on crée la NoUpdatePage.jsx, au cas où
+
+Pour ceux de localStorage, oui, on va s'y attaquer et la modification sera permanente
+on crée la ModifyCharacterPage.jsx
+
+on les répertorie dasn app.jsx
+
+
+
+
+
+on entoure le bouton d'un Link 
+to={`/modifier-personnage/${character.id}`}
+on crée le fichier ModifyCharacterPage et sa fonction
+dans app.jsx
+{ path: "/modifier-personnage/:id", element: <ModifyCharacterPage /> },
+
+on doit récupérer le personnage en fonction de son id on l'a dajà fait non ?
+on doit l'exporter
+de notre useCharactersManager
+
+Mais on doit auusi récupérer avant ça l'id qui est dans l'url, 
+on utilise useParams qui récupère le slug ou l'id de l'url
+slug, voir boutique
+nous avons ainsi les données en cours du personnages
+ces données seront envoyées dans les input de création
+oui nous réutilisons notre code !
+ça c'est super sympa !
+
+avec const [character, setCharacter] ... et la fonction handleChange
+
+nous allons pouvoir changer les données à la volée
+
+A la validation, on sécurise au cas où ce ne seraient pas des données de localDatas
+
+on envoie les données à un hook custom de validation 
+et on redirige
+
+notre custom hook recoit
+id
+nouvelles données
+
+regardons cette function
+
+ça fonctionne mais je dois rafraichir !
+faisons en meêm temps un setLocalChracaters !
+
+Et voilà ! MAJ automatique !
+
+Si on supprime tous les personnage d'une serie ou de toutes les série, page vide.On va proposer de créer un localfighter sur toutes les pages comme pour le localstorage vide
+
+Tant que nous ne rafraichissons pas
+
+Au cas où ajoutons un bouton qui rapelle les combattants de l'api
+
+Essayons de déployer avec vercel
+on envoie sur github

@@ -1,0 +1,14 @@
+Pour toutes les données
+https://la-taverne.ducompagnon.fr/api/global
+
+
+Pour tous les personnages
+https://la-taverne.ducompagnon.fr/api/personnages
+
+
+Pour toutes les classes
+https://la-taverne.ducompagnon.fr/api/classes
+
+
+Pour tousles membres
+https://la-taverne.ducompagnon.fr/api/membres

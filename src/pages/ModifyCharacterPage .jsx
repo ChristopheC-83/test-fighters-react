@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import SidesInput from "../components/formComponents/sidesInput";
+import SidesInput from "../components/formComponents/SidesInput";
 import ImagesInput from "../components/formComponents/ImagesInput";
 import GeneriqueInput from "../components/formComponents/GeneriqueInput";
 import { toast } from "sonner";

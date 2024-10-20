@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export default function sidesInput({ side, setSide }) {
+export default function SidesInput({ side, setSide }) {
   const url = "https://la-taverne.ducompagnon.fr/api/classes";
   const [classes, setClasses] = useState([]);
 

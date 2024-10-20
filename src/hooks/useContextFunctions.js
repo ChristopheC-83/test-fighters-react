@@ -1,6 +1,6 @@
 import { nanoid as generateNanoId } from "nanoid";
 
-const pathImg = "src/assets/images/personnages/";
+const pathImg = "/assets/images/personnages/";
 
 export function addHardCharacter(setHardCharacters) {
   setHardCharacters([

@@ -57,8 +57,10 @@ Tant que nous ne rafraichissons pas
 
 Au cas où ajoutons un bouton qui rapelle les combattants de l'api
 
-Essayons de déployer avec vercel
-on envoie sur github
-sur vercel
-Add new project
-fighters-react -> import -> deploy
+Essayons de déployer
+on passe assets dans public
+et 
+const pathImg = "/assets/images/personnages/";
+
+npm run build 
+sous domaine sur hostinger et c'est parti
